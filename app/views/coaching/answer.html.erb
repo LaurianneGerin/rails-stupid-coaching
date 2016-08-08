@@ -1,0 +1,23 @@
+<!-- Afficher la reponse du coach selon la question poser> -->
+<div class="formulaire">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="sms-moi text-center">
+          <p><%= @question %>
+            <br>
+            - Laurianne
+          </p>
+        </div>
+
+        <div class= "sms-coach text-center">
+          <p><%= @coach_says %>
+            <br>
+            - Tenderly, your coach.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class=text-center><%= link_to "Ask a new question", '/ask' %></p>
+</div>
